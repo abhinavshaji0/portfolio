@@ -2,8 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    margin-left:auto;
-    margin-right:auto;
   }
   html {
     scroll-behavior: smooth;
@@ -73,7 +71,7 @@ body {
     flex-direction: column;
     margin-left:4vh;
   }
-  @media (max-width: 420px){
+  @media only screen and (max-width: 768px) {
     #about_me{
       flex-direction: column;
     }
