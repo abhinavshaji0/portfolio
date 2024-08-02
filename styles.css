@@ -71,7 +71,7 @@ body {
     flex-direction: column;
     margin-left:4vh;
   }
-  @media only screen and (max-width: 768px) {
+   @media only screen and (max-width: 600px) and (orientation: portrait) {
     #about_me{
       flex-direction: column;
     }
