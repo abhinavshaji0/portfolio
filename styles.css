@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  #nav-bar {
+    position:fixed;
+    height:30px;
+    width:100%;
+    background-color: #e5ebf1;
+    z-index:10;
+  }
+  #nav-bar{
+    display:flex;
+    margin-top:0;
+    padding:20px 0px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  #nav-bar ul {
+    display: flex;
+    list-style: none;
+    margin-right: 2rem;
+  }
+  
+  #nav-bar li {
+    margin: 0 10px;
+  }
+  
+  #nav-bar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    padding-bottom: 23px;
+    border-bottom: 2px solid #e5ebf1;
+    transition: border-bottom-color 0.2s ease-in-out;
+  }
+  #nav-bar a:hover{
+    color: #0970f6;
+    border-bottom-color:#0970f6;
+  }
+  #about_me{
+    display:flex;
+    padding-left: 8vh;
+    padding-top: 20vh;
+    align-items: center;
+    font-size:large;
+  }
+  #about_me img{
+    height:25vh;
+    border-radius: 25px;
+    margin-left: 10px;
+    transition: height 0.2s ease-in-out;
+  }
+  #about_me img:hover{
+    height:30vh;
+  }
+  #intro{
+    display:flex;
+    flex-direction: column;
+    margin-left:4vh;
+  }
+   #about{
+    border: 2px solid black;
+    padding: 10px;
+    max-width: 80%; /* Adjust width as needed */
+    margin: 45px auto;
+}
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color:  white;
+}
+
+.navbar li {
+    flex: 1;
+    text-align: center;
+}
+
+.navbar li:last-child {
+    border-right: none; /* Remove border for the last tab */
+}
+
+.navbar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    height: 40px;
+}
+.navbar a:hover{
+  background-color: #E8E8FF;
+  transition: background-color 0.2s ease-in-out;
+}
+.navbar a.active {
+    background-color: #d7e3fb; 
+    border-bottom: 2px solid #333;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+    margin:30px;
+}
+
+#project{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+.pr {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}

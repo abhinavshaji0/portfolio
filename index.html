@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title>Abhinav's Portfolio</title>
+      <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Open Sans'>
+      <link href="styles.css" rel="stylesheet">
+      <script>
+  function showContent(event, moduleId) {
+            // Prevent default anchor behavior
+            event.preventDefault();
+
+            // Get all content divs and remove active class
+            var contents = document.querySelectorAll('.content');
+            contents.forEach(function(content) {
+                content.classList.remove('active');
+            });
+
+            // Get all navbar links and remove active class
+            var links = document.querySelectorAll('.navbar a');
+            links.forEach(function(link) {
+                link.classList.remove('active');
+            });
+
+            // Add active class to the clicked link
+            event.target.classList.add('active');
+
+            // Show the selected content
+            document.getElementById(moduleId).classList.add('active');
+        }
+    </script>
+    </head>
+    <body>
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#about">About Me</a></li>
+                <li><a class="nav-link" href="#projects">My Projects</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="about_me">
+            <img src="me.jpg">
+            <div id="intro"><div><p style="font-size:medium">Hello, I'm</p></div><div><h2>Abhinav Shaji</h2></div><div><h5>CompSci Undergrad</h5></div>
+        </div>
+        </div>
+         <div style="width:70%;  text-align: center;  margin-top: 50px; margin-left: auto; margin-right: auto; border-bottom: 2px solid #333;"><h1>About Me</h1></div>
+<div id="about">
+    <ul class="navbar">
+        <li><a href="#career" class="active" onclick="showContent(event, 'career')">Career Objective</a></li>
+        <li><a href="#edu" onclick="showContent(event, 'edu')">Education</a></li>
+        <li><a href="#skill" onclick="showContent(event, 'skill')">Skills</a></li>
+        <li><a href="#org" onclick="showContent(event, 'org')">Affiliated Organisations</a></li>
+        <li><a href="#info" onclick="showContent(event, 'info')">Personal Info</a></li>
+    </ul>
+    <div id="career" class="content active">
+        <p>
+            As a Btech Computer Science undergrad, I am always looking for oppurtunities where I can put myself to use, to experience the role as well as develop myself as a Computer Science Engineer. I would like to 
+            exercise the skills, that I have developed during my time at NCERC, Pampady, onto a real work environment and in the process, learn more about the environment.
+        </p>
+    </div>
+    <div id="edu" class="content">
+        <ul>
+            <li><p><strong>Nehru College of Engineering and Research Centre, Pampady, Thrissur</strong><br>Current Semester: S7<br>2021-Present : 8.16 CGPA </p></li>
+            <li><p><strong>St Francis School, Vadakkencherry, Palakkad (ISC)</strong><br>XI-XII<br>2019 - 2021 : 96.2%</p></li>
+            <li><p><strong>St Francis School, Vadakkencherry, Palakkad (ICSE)</strong><br>LKG-X<br>2007 - 2019 : 92%</p></li>
+        </ul>
+    </div>
+    <div id="skill" class="content">
+        <ul>
+            <li>Web Designing & Development</li><li>C programming</li><li>Python programming</li><li>JAVA programming</li><li>Generative AI & Prompt Typing</li>
+        </ul>
+    </div>
+    <div id="org" class="content">
+        <ul>
+            <li>Serving as the <strong>IPR & Research Lead</strong> in <strong>IEDC Cell</strong> of NCERC, Pampady, since 2022</li>
+            <li>Serving as a member of the <strong>Tourism club</strong> of NCERC</li>
+        </ul>
+    </div>
+
+    <div id="info" class="content">
+        <ul>
+            <li>Date of Birth : March 28, 2003</li>
+            <li>Nationality : Indian</li>
+            <li>Languages in order of preference: English, Malayalam, Hindi</li>
+        </ul>
+    </div>
+</div>
+<div style="width:70%;  text-align: center;  margin: 50px auto; border-bottom: 2px solid #333;"><h1>My Projects</h1></div>
+<div id="projects">
+    <div id="project1" class="pr">
+        <img src="m1.png">
+    </div>
+    <div id="project2 pr"></div>
+    <div id="project3 pr"></div>
+</div>
+    </body>
+</html>
