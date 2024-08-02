@@ -5,6 +5,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1.0">
       <title>Abhinav's Portfolio</title>
       <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Open Sans'>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
       <link href="styles.css" rel="stylesheet">
       <script>
   function showContent(event, moduleId) {
@@ -34,17 +35,21 @@
     <body>
         <nav id="nav-bar">
             <ul>
-                <li><a class="nav-link" href="#about">About Me</a></li>
-                <li><a class="nav-link" href="#projects">My Projects</a></li>
+                <li><a class="nav-link" href="#ab">About Me</a></li>
+                <li><a class="nav-link" href="#pr">My Projects</a></li>
                 <li><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div id="about_me">
             <img src="me.jpg">
-            <div id="intro"><div><p style="font-size:medium">Hello, I'm</p></div><div><h2>Abhinav Shaji</h2></div><div><h5>CompSci Undergrad</h5></div>
+            <div id="intro">
+                <div><p style="font-size:medium">Hello, I'm</p></div>
+                <div><h2>Abhinav Shaji</h2></div>
+                <div><h5>CompSci Undergrad</h5></div>
+                <div><a href="https://www.linkedin.com/in/abhinav-shaji-6a134226a/"><button>LinkedIn</button></a></div>
         </div>
         </div>
-         <div style="width:70%;  text-align: center;  margin-top: 50px; margin-left: auto; margin-right: auto; border-bottom: 2px solid #333;"><h1>About Me</h1></div>
+         <div id="ab" style="width:70%;  text-align: center;  margin-top: 75px; margin-left: auto; margin-right: auto; border-bottom: 2px solid #333;"><h1>About Me</h1></div>
 <div id="about">
     <ul class="navbar">
         <li><a href="#career" class="active" onclick="showContent(event, 'career')">Career Objective</a></li>
@@ -86,13 +91,36 @@
         </ul>
     </div>
 </div>
-<div style="width:70%;  text-align: center;  margin: 50px auto; border-bottom: 2px solid #333;"><h1>My Projects</h1></div>
-<div id="projects">
-    <div id="project1" class="pr">
-        <img src="m1.png">
-    </div>
-    <div id="project2 pr"></div>
-    <div id="project3 pr"></div>
+<div id="pr" style="width:70%;  text-align: center;  margin: 50px auto; margin-top: 25vh; border-bottom: 2px solid #333;"><h1>My Projects</h1></div>
+    <div class="projects-grid">
+      <a href="index.html" target="_blank" class="project project-tile" style="text-decoration:none;">
+        <img class="project-image" src="31.jpeg" alt="project"/>
+        <p class="project-title" >
+          <span class="code">&lt;</span>Portfolio Page<span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a href="index.html" target="_blank" class="project project-tile" style="text-decoration:none;">
+        <img class="project-image" src="R.jpeg" alt="project"/>
+        <p class="project-title">
+          <span class="code">&lt;</span>Untitled Project<span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a href="index.html" target="_blank" class="project project-tile" style="text-decoration:none;">
+        <img class="project-image" src="R.jpeg" alt="project"/>
+        <p class="project-title" style="text-align: center;">
+          <span class="code">&lt;</span>Untitled Project<span class="code">&#47;&gt;</span>
+        </p>
+      </a>
 </div>
+<section id="contact" class="contact-section">
+    <div class="contact-links">
+      <a href="https://github.com/abhinavshaji0" target="_blank" class="btn contact-details"><i class="fab fa-github"></i>GitHub</a>
+      <a href="mailto:shajiabhinav0@gmail.com" class="btn contact-details"><i class="fas fa-at"></i>Send a mail</a>
+      <a href="https://www.linkedin.com/in/abhinav-shaji-6a134226a/" class="btn contact-details">LinkedIn</a>
+    </div>
+  </section>
     </body>
+    <footer>
+        <p>&copy; Created by Abhinav Shaji</p>
+    </footer>
 </html>
